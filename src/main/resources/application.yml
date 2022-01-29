@@ -1,2 +1,17 @@
 server:
   port: 9001
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: DEPARTMENT-SERVICE
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://service-registry:8761/eureka/
+  instance:
+    hostname: localhost
