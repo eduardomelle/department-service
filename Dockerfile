@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:11-jdk-slim
 
 ADD target/department-service-0.0.1-SNAPSHOT.jar department-service.jar
 
